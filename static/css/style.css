@@ -1,0 +1,84 @@
+.bd{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.navbar{
+    background-color:brown;
+    font-family:cursive;
+    padding-right:15px;
+    padding-left:15px;
+}
+.navdiv{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    font-size:35px;
+    font-weight:600;
+    color:white;
+}
+li{
+    list-style:none;
+    display:inline-block;
+}
+li a{    
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    margin-right:25px;
+}
+button{
+    background-color:black;
+    margin-left:10px;
+    border-radius:10px;
+    padding:10px;
+    width:90px;
+}
+button a{
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+}
+.cont{
+    border-style: solid;
+    border-width: 3px;
+    border-color: coral;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    display: flex;
+    height: 50%;
+    width: 50%;
+    
+}
+.cont h1{
+    color: coral;
+}
+.cont h2{
+    color: coral;
+}
+.cont h3{
+    color: coral;
+}
+.loginform{
+    position: relative;
+    width: 30%;
+    height: 60%;
+    border-style: solid;
+    border-width: 2px;
+    background-color: whitesmoke;    
+}
+.signupform{
+    position: relative;
+    width: 30%;
+    height: 60%;
+    border-style: solid;
+    border-width: 2px;
+    background-color: whitesmoke;
+}
