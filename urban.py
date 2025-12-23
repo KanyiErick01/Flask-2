@@ -10,13 +10,15 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, login_
 from flask_bcrypt import Bcrypt
 from flask_admin import Admin, AdminIndexView
 from flask_admin.contrib.sqla import ModelView
+from dotenv import load_dotenv
+import os
 
 #configs
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///urbans.db"
 db=SQLAlchemy(app)
 migrate = Migrate(app, db,command='migrate',render_as_batch=False)
-app.config['SECRET_KEY'] = 'your_secret_key'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 bcrypt = Bcrypt(app) 
 admin=Admin(app)
 
@@ -33,6 +35,9 @@ def load_user(user_id):
 @app.route("/", methods=["POST","GET"])
 def index():
     return render_template ("index.html")
+
+def configure():
+    load_dotenv()
 
 @app.route("/login", methods=["POST","GET"])
 def login():
