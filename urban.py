@@ -105,6 +105,7 @@ class Posts(db.Model):
     def __repr__(self):
         return self.title
     
+#Admin Section    
 admin.add_view(ModelView(User, db.session))
 admin.add_view(ModelView(Posts, db.session))   
 

@@ -23,14 +23,20 @@
       </div>
 
     </nav>
-    {% block content %}
-</body>    
-<footer>
-      <h1>About</h1>
-      <h5>This is a simple portfolio and blog website designed to showcase the ability to develop websites with python flask framework,sql,css and html</h5>
-      <h1>Contact</h1>
-</footer>
+    <section class="hero">
+      
+      {% block content %}
 
-    {% endblock %}    
+      {% endblock %}
+
+    </section>
+
+</body>    
+<footer class="footer">
+  <div class="container">
+      <h1>About</h1>
+      <h5>This is a simple portfolio and blog website designed to showcase the ability to develop websites!</h5>
+  </div>
+</footer>
 
 </html>
